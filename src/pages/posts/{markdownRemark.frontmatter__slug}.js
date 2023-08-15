@@ -6,7 +6,7 @@ export default function BlogPostTemplate({ data: { markdownRemark } }) {
   const { frontmatter, html } = markdownRemark;
   return (
     <Layout>
-      <h2>{frontmatter.title}</h2>
+      <h1>{frontmatter.title}</h1>
       <div>{frontmatter.date}</div>
       <div className="post-body" dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
