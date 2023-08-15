@@ -1,5 +1,6 @@
 ---
 title: 'Hello World!'
+description: '初めての投稿'
 date: '2023-08-15'
 slug: 'hello-world'
 hero_image: '../../images/test_image_star.png'

@@ -10,6 +10,7 @@
 module.exports = {
   siteMetadata: {
     title: '気ままな備忘録',
+    description:'のんびり気ままに書いていく備忘録です．',
     author: 'mame77',
     category: ['blog', 'server', 'network', 'photo'],
     user: { name: 'mame77' },

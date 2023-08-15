@@ -2,6 +2,7 @@ import { graphql } from 'gatsby';
 import * as React from 'react';
 import Layout from '../../components/layout';
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+import { Seo } from '../../components/seo';
 
 export default function BlogPostTemplate({ data: { markdownRemark } }) {
   const { frontmatter, html } = markdownRemark;
@@ -24,6 +25,7 @@ export const query = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+        description
         hero_image {
           childImageSharp {
             gatsbyImageData
@@ -33,3 +35,8 @@ export const query = graphql`
     }
   }
 `;
+
+export const Head = ({ data: { markdownRemark } }) => {
+  const { frontmatter } = markdownRemark;
+  return <Seo title={frontmatter.title} description={frontmatter.description}/>;
+};
