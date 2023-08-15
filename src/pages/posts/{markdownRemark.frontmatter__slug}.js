@@ -4,6 +4,8 @@ import Layout from '../../components/layout';
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 import { Seo } from '../../components/seo';
 
+// import "../../templates/blog-post.modules.css";
+
 export default function BlogPostTemplate({ data: { markdownRemark } }) {
   const { frontmatter, html } = markdownRemark;
   const image = getImage(frontmatter.hero_image);
