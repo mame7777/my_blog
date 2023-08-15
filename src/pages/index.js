@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from '../components/layout';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 
 const IndexPage = ({ data }) => {
   return (
@@ -11,9 +11,13 @@ const IndexPage = ({ data }) => {
 
       {data.allMarkdownRemark.edges.map((edge) => (
         <div key={edge.node.id}>
-          <h2>{edge.node.frontmatter.title}</h2>
+          <h2>
+            <Link to={`/posts/${edge.node.frontmatter.slug}`}>
+              {edge.node.frontmatter.title}
+            </Link>
+          </h2>
           <p>{edge.node.frontmatter.date}</p>
-          <div dangerouslySetInnerHTML={{ __html: edge.node.html }} />
+          {/* <div dangerouslySetInnerHTML={{ __html: edge.node.html }} /> */}
         </div>
       ))}
     </Layout>
@@ -21,20 +25,21 @@ const IndexPage = ({ data }) => {
 }
 
 export const query = graphql`
-  query {
-    allMarkdownRemark {
-      edges {
-        node {
-          html
-          timeToRead
-          frontmatter {
-            title
-            date
-          }
+query {
+  allMarkdownRemark {
+    edges {
+      node {
+        id
+        html
+        timeToRead
+        frontmatter {
+          title
+          date
+          slug
         }
       }
     }
   }
+}
 `;
-
 export default IndexPage;

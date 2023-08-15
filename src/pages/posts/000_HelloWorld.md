@@ -1,7 +1,7 @@
 ---
 title: 'Hello World!'
 date: '2023-08-15'
-slug: 'Hello World!'
+slug: 'hello-world'
 ---
 
 ## Gatsby での最初の記事
