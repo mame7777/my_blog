@@ -3,7 +3,7 @@ import * as React from 'react';
 const Footer = () => {
   return (
     <footer>
-      <div>© 気ままな備忘録 {new Date().getFullYear()}</div>
+      <p className='text-center mt-5'>© 気ままな備忘録 {new Date().getFullYear()}</p>
     </footer>
   );
 };
