@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
-import "bootstrap/dist/js/bootstrap.bundle.min.js"
+
+// import "bootstrap/dist/js/bootstrap.bundle.min.js";
+// import "@popperjs/core/dist/umd/popper.min.js";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = () => {
   const data = useStaticQuery(
@@ -19,7 +22,7 @@ const Header = () => {
     <header>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/" style={{"font-size": "2.0rem"}}>{data.site.siteMetadata.title}</Link>
+          <Link className="navbar-brand" to="/" style={{"fontSize": "2.0rem"}}>{data.site.siteMetadata.title}</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
