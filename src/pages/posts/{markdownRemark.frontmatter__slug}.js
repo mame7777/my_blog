@@ -4,17 +4,17 @@ import Layout from '../../components/layout';
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 import { Seo } from '../../components/seo';
 
-// import "../../templates/blog-post.modules.css";
+import "../../templates/blog-post.modules.css";
 
 export default function BlogPostTemplate({ data: { markdownRemark } }) {
   const { frontmatter, html } = markdownRemark;
   const image = getImage(frontmatter.hero_image);
   return (
     <Layout>
-      <GatsbyImage image={image} alt="Hero Image" />
-      <h1>{frontmatter.title}</h1>
-      <div>{frontmatter.date}</div>
-      <div className="post-body" dangerouslySetInnerHTML={{ __html: html }} />
+      {/* <GatsbyImage image={image} alt="Hero Image" /> */}
+      <h1 className='h1'>{frontmatter.title}</h1>
+      <div>投稿日：{frontmatter.date}</div>
+      <div className="post-body blog-post" dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   );
 }

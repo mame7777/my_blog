@@ -3,6 +3,7 @@ import Header from './header';
 import Footer from './footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../templates/gloabal.modules.css'
 
 const Layout = ({ children }) => {
   return (
