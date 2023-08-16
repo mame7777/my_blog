@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <Header />
-      <section className="container">
+      <section className="container" style={{ "paddingTop": "6rem" }}>
         {children}
       </section>
       <Footer />

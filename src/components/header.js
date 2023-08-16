@@ -17,9 +17,9 @@ const Header = () => {
 
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-dark mb-4">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/" style={{"fontSize": "2.0rem"}}>{data.site.siteMetadata.title}</Link>
+          <Link className="navbar-brand" to="/" style={{ "fontSize": "1.8rem" }}>{data.site.siteMetadata.title}</Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
