@@ -11,9 +11,11 @@ export default function BlogPostTemplate({ data: { markdownRemark } }) {
   const image = getImage(frontmatter.hero_image);
   return (
     <Layout>
-      {/* <GatsbyImage image={image} alt="Hero Image" /> */}
       <h1 className='h1'>{frontmatter.title}</h1>
       <div>投稿日：{frontmatter.date}</div>
+      <div class="text-center">
+        <GatsbyImage image={image} alt="Hero Image"/>
+      </div>
       <div className="post-body blog-post" dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   );

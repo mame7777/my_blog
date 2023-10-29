@@ -3,7 +3,7 @@ title: 'Hello World!'
 description: '初めての投稿'
 date: '2023-08-15'
 slug: 'hello-world'
-hero_image: '../../images/test_image_star.png'
+hero_image: '../../images/empty.png'
 ---
 
 ## やぁ！  
@@ -11,7 +11,7 @@ hero_image: '../../images/test_image_star.png'
 これから，時間をかけてアップデートしていければいいなと思っています！  
   
 画像も表示できるよ！下はかわいいお星さまの画像！  
-![テスト画像](../../images/test_image_star.png)
+![テスト画像](../../images/0000/test_image_star.png)
   
 ## なんで新しくサイト作ってるの？  
 前までwordpressのサイト持っていたのですが，システム自体をいろいろ壊してしまって復旧困難となりました...<br/>

@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => {
 
       <h2 className="mt-5">新規投稿</h2>
       {data.allMarkdownRemark.edges.map((edge) => (
-        <div className="card">
+        <div className="card mb-1">
           <div className="card-body">
             <div key={edge.node.id}>
               <h2 className="card-title">
