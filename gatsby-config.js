@@ -35,6 +35,7 @@ module.exports = {
               /* showCaptions: true, */
             },
           },
+          `gatsby-plugin-catch-links`,
         ],
       },
     },
