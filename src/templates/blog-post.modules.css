@@ -6,16 +6,17 @@
     background: var(--bs-light);
   }
   
-  .blog-post h3 {
-    padding: 0.5rem 0rem;
-    border-bottom: 3px solid #000;
-  }
-  
-  /* Table */
-  .blog-post table thead tr th {
-    border-bottom: 1px solid var(--bs-gray-dark);
-  }
-  
-  .blog-post table tbody tr td {
-    border-bottom: 1px solid var(--bs-gray-500);
-  }
+.blog-post h3 {
+  padding: 0.5rem 0rem;
+  margin-left: 0rem;
+  border-bottom: 3px solid #000;
+}
+
+/* Table */
+.blog-post table thead tr th {
+  border-bottom: 1px solid var(--bs-gray-dark);
+}
+
+.blog-post table tbody tr td {
+  border-bottom: 1px solid var(--bs-gray-500);
+}
