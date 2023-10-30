@@ -34,7 +34,7 @@ const IndexPage = ({ data }) => {
 export const query = graphql`
 query {
   allMarkdownRemark (
-    sort: { fields: [frontmatter___date], order: DESC }
+    sort: {frontmatter: {date: DESC}}
   )
   {
     edges {
