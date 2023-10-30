@@ -27,6 +27,9 @@ const IndexPage = ({ data }) => {
           </div>
         </div>
       ))}
+      <div className="text-center">
+        <Link to="/all-post" className="btn btn-primary">もっと見る</Link>
+      </div>
     </Layout>
   );
 }
@@ -35,6 +38,7 @@ export const query = graphql`
 query {
   allMarkdownRemark (
     sort: {frontmatter: {date: DESC}}
+    limit: 3
   )
   {
     edges {
