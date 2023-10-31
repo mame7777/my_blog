@@ -14,7 +14,7 @@ export default function BlogPostTemplate({ data: { markdownRemark } }) {
       <h1 className='h1'>{frontmatter.title}</h1>
       <div>投稿日：{frontmatter.date}</div>
       <div class="text-center">
-        <GatsbyImage image={image} alt="Hero Image"/>
+        <GatsbyImage image={image} alt="Hero Image" style={{"max-width": "500px"}}/>
       </div>
       <div className="post-body blog-post" dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
