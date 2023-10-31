@@ -23,7 +23,11 @@ hero_image: '../../images/0003/sensor.jpg'
 .envファイルからZabbixサーバのIPアドレスを読んでいる．  
 
 ### サンプルコード？
-```
+<div class="gatsby-code-title">
+  <span>aiueo</span>
+</div>
+
+```python
 import datetime, re, serial, io, os
 from zappix.sender import Sender
 from dotenv import load_dotenv

@@ -36,6 +36,8 @@ module.exports = {
             },
           },
           `gatsby-plugin-catch-links`,
+          `gatsby-remark-prismjs-title`,
+          `gatsby-remark-prismjs`,          
         ],
       },
     },
