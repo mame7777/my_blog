@@ -2,7 +2,7 @@
 title: 'CO2センサの値をzabbixに送る'
 description: '言語：python'
 date: '2023-10-31'
-slug: 'co2sensor_to_zabbix'
+slug: 'co2sensor-to-zabbix'
 hero_image: '../../images/0003/sensor.jpg'
 ---
 
