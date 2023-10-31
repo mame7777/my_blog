@@ -13,68 +13,54 @@ hero_image: '../../images/0003/sensor.jpg'
 
 ## コードの流れ
 ### CO2センサから値を取得する
-以下のコードをほぼほぼ拝借した．
+以下のコードをほぼほぼ拝借した．  
 参考：[udco2s.py](https://gist.github.com/oquno/d07f6dbf8cc760f2534d9914efe79801)  
 
 
 ### Zabbixに送る
-以下のサイトが詳しいので，そちらを参考にした．  
-参考：[ESP32 で Zabbix にデータを送ってみる](https://qiita.com/nanbuwks/items/296f25b71148f7a28ab6)  
+[zappix](https://pypi.org/project/zappix/)を使用した．
+ドキュメント通り，`pip install zappix`で入れられる．  
+.envファイルからZabbixサーバのIPアドレスを読んでいる．  
 
 ### サンプルコード？
 ```
-#include <M5StickC.h>
-#include <WiFi.h>
-#include <M5_ENV.h>
-#include <ESP32ZabbixSender.h>
+import datetime, re, serial, io, os
+from zappix.sender import Sender
+from dotenv import load_dotenv
 
-#define SERVERADDR XXX, XXX, XXX,  XXX 
-#define ZABBIXPORT 10051
-#define ZABBIXHOST "M5-env-sensor"
+class ZABBIX:
+    def __init__(self, server="127.0.0.1", host="Zabbix server", port=10051):
+        self.server = server
+        self.host = host
+        self.port = port
+        self.sender = Sender(server=self.server, port=self.port)
+    
+    def send(self, key, value):
+        self.sender.send_value(self.host, key, value)
+        
+class UDCO2S:
+    def __init__(self, dev="/dev/ttyACM0"):
+        self.dev = dev
+        self.zabbix = ZABBIX(server=os.environ['ZABBIX_SERVER'], host="CO2_Sensor")
 
-M5StickC m5c;
-SHT3X sht30;
-QMP6988 qmp6988;
+    def start_logging(self):
+        regex = re.compile(r'CO2=(?P<co2>\d+),HUM=(?P<hum>\d+\.\d+),TMP=(?P<tmp>-?\d+\.\d+)')
+        with serial.Serial(self.dev, 115200, timeout=6) as conn:
+            conn.write("STA\r\n".encode())
+            print(conn.readline().decode().strip())
+            loop_count = 0
+            while True:
+                line = conn.readline().decode().strip()
+                m = regex.match(line)
+                if loop_count % 10 == 0:
+                    self.zabbix.send("co2", m.group("co2"))
+                    self.zabbix.send("hum", m.group("hum"))
+                    self.zabbix.send("tmp", m.group("tmp"))
+                loop_count += 1
+                # print([datetime.datetime.now().strftime("%Y-%m-%d") ,datetime.datetime.now().strftime("%H:%M:%S"), m.group("co2"), m.group("hum"), m.group("tmp")])
+            conn.write("STP\r\n")
 
-float tmp      = 0.0;
-float hum      = 0.0;
-float pressure = 0.0;
-
-ESP32ZabbixSender zabbixSender;
-
-void setup() {
-  m5c.begin(false, true, false);  // 初期化する
-  Wire.begin(26, 32);  // Initialize pin 26,32.
-  qmp6988.init();
-  Serial.println("Connecting to WiFi");
-  WiFi.begin();
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println("\nWiFi connected!");
-  Serial.println("IP address: ");
-  Serial.println(WiFi.localIP());
-  zabbixSender.Init(IPAddress(SERVERADDR), ZABBIXPORT, ZABBIXHOST); // Init zabbix server information
-}
-
-void loop() {
-  pressure = qmp6988.calcPressure();
-  if (sht30.get() == 0) {  // Obtain the data of shT30.
-          tmp = sht30.cTemp;   // Store the temperature obtained from shT30.
-          hum = sht30.humidity;  // Store the humidity obtained from the SHT30.
-      } else {
-          tmp = 0, hum = 0;
-      }
-  Serial.printf(
-      "Temp: %2.1f  \r\nHumi: %2.0f%%  \r\nPressure:%2.0fPa\r\n---\n", tmp,
-      hum, pressure);
-
-  zabbixSender.ClearItem(); // Clear item list
-  zabbixSender.AddItem("temperature", tmp);
-  zabbixSender.AddItem("humidity", hum);
-  zabbixSender.AddItem("pressure", pressure/100);
-  zabbixSender.Send();
-  delay(30000);
-}
+if __name__ == "__main__":
+    load_dotenv()
+    UDCO2S(dev="COM3").start_logging()
 ```
