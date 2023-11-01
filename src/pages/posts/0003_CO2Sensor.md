@@ -6,25 +6,25 @@ slug: 'co2sensor-to-zabbix'
 hero_image: '../../images/0003/sensor.jpg'
 ---
 
-## 使ったマイコン・センサ
-マイコンはM5 Stack atom Lite，センサはIODATAのUD-CO2Sという使った．  
+## 使ったセンサ
+センサはIODATAのUD-CO2Sという使った．  
 1万円ぐらいするセンサを積みながらも2,3千円程度で投げ売りされ，シリアル通信で値を取得できることから多くの先駆者がいるセンサ．  
 温度と湿度も値が取れるが，あくまで補正用といった感じらしい．
-
+  
 ## コードの流れ
 ### CO2センサから値を取得する
 以下のコードをほぼほぼ拝借した．  
 参考：[udco2s.py](https://gist.github.com/oquno/d07f6dbf8cc760f2534d9914efe79801)  
-
-
+  
 ### Zabbixに送る
 [zappix](https://pypi.org/project/zappix/)を使用した．
 ドキュメント通り，`pip install zappix`で入れられる．  
 .envファイルからZabbixサーバのIPアドレスを読んでいる．  
-
+USB接続したPCからネットワークを介してzabbixサーバに送られる．  
+  
 ### サンプルコード？
 <div class="gatsby-code-title">
-  <span>aiueo</span>
+  <span>co2_zabbix.py</span>
 </div>
 
 ```python
