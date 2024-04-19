@@ -18,6 +18,13 @@ module.exports = {
   /* Your site config here */
   plugins: [
     {
+      // Google Tag Manager
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-T9N3N8S",
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
