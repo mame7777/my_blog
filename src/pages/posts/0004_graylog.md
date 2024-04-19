@@ -1,7 +1,7 @@
 ---
 title: 'graylogの環境構築をしてみる'
 description: 'syslogをよしなにできる環境を'
-date: '2024-14-20'
+date: '2024-04-20'
 slug: 'graylog'
 hero_image: '../../images/empty.png'
 ---
@@ -110,11 +110,11 @@ EOT
 ### Graylogの設定
 `password_secret`の値を次のコマンドで作成し，控える．
 ```
-< /dev/urandom tr -dc A-Z-a-z-0-9 | head -c${1:-96};echo;
+# < /dev/urandom tr -dc A-Z-a-z-0-9 | head -c${1:-96};echo;
 ```
 `root_password_sha2`の値を次のコマンドで作成し，控える．
 ```
-echo -n "Enter Password: " && head -1 </dev/stdin | tr -d '\n' | sha256sum | cut -d" " -f1
+# echo -n "Enter Password: " && head -1 </dev/stdin | tr -d '\n' | sha256sum | cut -d" " -f1
 ```
 
 設定ファイルに以上の内容を記載．
