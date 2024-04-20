@@ -2,12 +2,12 @@
 title: 'Docker上でgraylogの環境構築をしてみる'
 description: 'glaylog環境構築リベンジ'
 date: '2024-04-21'
-slug: 'graylog_docker'
-hero_image: '../../images/graylog-logo.png'
+slug: 'graylog-docker'
+hero_image: '../../images/0005/graylog-logo.png'
 ---
 
 ## 前回を受けて
-ドキュメント通りにやったがうまくいかなかった．  
+Ubuntu上にそのまま構築することを試みて，ドキュメント通りにやったがうまくいかなかった．  
 そのため，今回はDockerを使用してみる．  
 
 ## 構築方法
@@ -18,7 +18,7 @@ hero_image: '../../images/graylog-logo.png'
 
 ### 構築を目指す環境
 - Graylog : 5.0.6
-- Mongo DB : 5.0.17
+- Mongo DB : 5.0
 - ElasticSerch : 7.10.2
 
 ### 構築手順

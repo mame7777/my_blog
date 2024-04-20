@@ -3,7 +3,7 @@ title: 'graylogの環境構築をしてみる'
 description: 'syslogをよしなにできる環境を'
 date: '2024-04-20'
 slug: 'graylog'
-hero_image: '../../images/empty.png'
+hero_image: '../../images/0004/graylog-logo.png'
 ---
 
 ## graylogって？
