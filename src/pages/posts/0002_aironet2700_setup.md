@@ -1,5 +1,6 @@
 ---
 title: 'Aironetのセットアップ'
+summary: '初心者がGUIとCUIを使いながらぼちぼち'
 description: '初心者がGUIとCUIを使いながらぼちぼち'
 date: '2023-10-30'
 slug: 'aironet2700-setup'

@@ -1,5 +1,6 @@
 ---
 title: 'graylogの環境構築をしてみる'
+summary: 'syslogをよしなにできる環境を'
 description: 'syslogをよしなにできる環境を'
 date: '2024-04-20'
 slug: 'graylog'

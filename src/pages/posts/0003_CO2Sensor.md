@@ -1,5 +1,6 @@
 ---
 title: 'CO2センサの値をzabbixに送る'
+summary: '言語：python'
 description: '言語：python'
 date: '2023-10-31'
 slug: 'co2sensor-to-zabbix'

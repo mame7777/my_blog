@@ -1,6 +1,7 @@
 ---
 title: 'Docker上でgraylogの環境構築をしてみる'
-description: 'glaylog環境構築リベンジ'
+summary: 'glaylog環境構築リベンジ'
+description: 'glaylog環境構築リベンジをDocker上で行います．'
 date: '2024-04-21'
 slug: 'graylog-docker'
 hero_image: '../../images/0005/graylog-logo.png'

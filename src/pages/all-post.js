@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
                   {edge.node.frontmatter.title}
                 </Link>
               </h2>
-              <p className="card-text">{edge.node.frontmatter.description}</p>
+              <p className="card-text">{edge.node.frontmatter.summary}</p>
               {/* <div dangerouslySetInnerHTML={{ __html: edge.node.html }} /> */}
             </div>
           </div>
@@ -42,6 +42,7 @@ query {
         timeToRead
         frontmatter {
           title
+          summary
           date
           slug
           description

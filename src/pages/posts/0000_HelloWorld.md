@@ -1,5 +1,6 @@
 ---
 title: 'Hello World!'
+summary: '初めての投稿'
 description: '初めての投稿'
 date: '2023-08-15'
 slug: 'hello-world'
