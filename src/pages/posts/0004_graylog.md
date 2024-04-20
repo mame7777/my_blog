@@ -1,7 +1,7 @@
 ---
 title: 'graylogの環境構築をしてみる'
 summary: 'syslogをよしなにできる環境を'
-description: 'syslogをよしなにできる環境を'
+description: 'syslogをよしなにできる環境を整えるべく，graylogを入れてみることにしました．結果として，エラーで詰みました．'
 date: '2024-04-20'
 slug: 'graylog'
 hero_image: '../../images/0004/graylog-logo.png'
@@ -134,3 +134,7 @@ EOT
 # systemctl start graylog-server.service
 # systemctl --type=service --state=active | grep graylog
 ```
+## エラー内容
+ひとまず動くようになったが，webUIのログインができずに終わってしまった．  
+指定どおりの方法でやったはずだか認証が弾かれる．  
+また，ログ上ではその裏でgraylogを起動しようとして失敗するのをループしていた．

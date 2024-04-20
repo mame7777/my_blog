@@ -1,7 +1,7 @@
 ---
 title: 'Aironetのセットアップ'
 summary: '初心者がGUIとCUIを使いながらぼちぼち'
-description: '初心者がGUIとCUIを使いながらぼちぼち'
+description: '初心者がGUIとCUIを使いながらぼちぼちcisco社のアクセスポイントと戯れた記録です．右も左も分からない状態から最低限機能する状態に持っていく方法です．'
 date: '2023-10-30'
 slug: 'aironet2700-setup'
 hero_image: '../../images/0002/aironet.jpg'

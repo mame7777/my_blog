@@ -1,7 +1,7 @@
 ---
 title: 'Hello World!'
 summary: '初めての投稿'
-description: '初めての投稿'
+description: '本ブログ初めての投稿です！気ままに更新していきます．'
 date: '2023-08-15'
 slug: 'hello-world'
 hero_image: '../../images/empty.png'

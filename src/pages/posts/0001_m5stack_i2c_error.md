@@ -1,7 +1,7 @@
 ---
 title: 'M5Stack atomでのI2Cデバイスの読み取りエラー'
 summary: 'i2cRead returned Error 263'
-description: 'i2cRead returned Error 263'
+description: '「i2cRead returned Error 263」が発生した際のロラブルシュートを軽く書きました．'
 date: '2023-10-29'
 slug: 'm5stack-i2c-error'
 hero_image: '../../images/0001/error_output.png'
