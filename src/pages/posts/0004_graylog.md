@@ -12,7 +12,8 @@ logを良しなにするものらしい．
 インストールは公式ドキュメントを参考にした．  
 https://go2docs.graylog.org/5-2/downloading_and_installing_graylog/ubuntu_installation.html  
 一応起動するようになったが，なぜかログインで詰んで先に行かなくなってしまった．  
-そのため，正しいか非常に微妙だが記録も兼ねて一応公開しておく．
+そのため，正しいか非常に微妙だが記録も兼ねて一応公開しておく．  
+なお，[Dockerを使った環境構築はこちら](../graylog-docker)
 
 ## 構築手順
 ### 環境
