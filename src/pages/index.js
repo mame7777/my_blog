@@ -1,6 +1,7 @@
 import * as React from "react"
 import Layout from '../components/layout';
 import { graphql, Link } from 'gatsby';
+import { Seo } from '../components/seo';
 
 const IndexPage = ({ data }) => {
   return (
@@ -59,3 +60,12 @@ query {
 }
 `;
 export default IndexPage;
+
+export const Head = () => {
+  return (
+    <Seo
+      title="mame77のブログへようこそ!"
+      description="mame77のブログ「きままな備忘録」のトップページです．のんび～り書き足していってます．"
+    />
+  );
+};

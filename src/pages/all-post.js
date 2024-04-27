@@ -1,8 +1,9 @@
 import * as React from "react"
 import Layout from '../components/layout';
 import { graphql, Link } from 'gatsby';
+import { Seo } from '../components/seo';
 
-const IndexPage = ({ data }) => {
+const AllPostPage = ({ data }) => {
   return (
     <Layout>
       <h1>投稿一覧</h1>
@@ -52,4 +53,13 @@ query {
   }
 }
 `;
-export default IndexPage;
+export default AllPostPage;
+
+export const Head = () => {
+  return (
+    <Seo
+      title="投稿一覧ページ"
+      description="このブログに投稿された記事一覧です．"
+    />
+  );
+};
