@@ -9,11 +9,13 @@
  */
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://mame77.com',
     title: '気ままな備忘録',
     description:'のんびり気ままに書いていく備忘録です．',
     author: 'mame77',
     category: ['blog', 'server', 'network', 'photo'],
     user: { name: 'mame77' },
+    lang: 'ja',
   },
   /* Your site config here */
   plugins: [
@@ -51,5 +53,31 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+        }`
+        ,
+        resolvePages: ({
+          allSitePage: { nodes: allPages },
+        }) => {
+          return allPages.map(page => {
+            return { ...page }
+          })
+        }
+      },
+    },
   ],
 };

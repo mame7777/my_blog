@@ -24,6 +24,7 @@
     "gatsby-plugin-google-tagmanager": "^5.13.1",
     "gatsby-plugin-image": "^3.11.0",
     "gatsby-plugin-sharp": "^5.11.0",
+    "gatsby-plugin-sitemap": "^6.13.1",
     "gatsby-remark-images": "^7.11.0",
     "gatsby-remark-prismjs": "^7.12.0",
     "gatsby-remark-prismjs-title": "^1.0.0",
