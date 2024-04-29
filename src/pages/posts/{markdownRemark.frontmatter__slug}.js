@@ -33,8 +33,8 @@ export const query = graphql`
         hero_image {
           childImageSharp {
             gatsbyImageData
-          }
         }
+      }
       }
     }
   }
@@ -42,5 +42,9 @@ export const query = graphql`
 
 export const Head = ({ data: { markdownRemark } }) => {
   const { frontmatter } = markdownRemark;
-  return <Seo title={frontmatter.title} description={frontmatter.description}/>;
+  return <Seo
+            title={frontmatter.title}
+            description={frontmatter.description}
+            ogpImage={frontmatter.hero_image.childImageSharp.gatsbyImageData.images.fallback.src}
+          />;
 };
