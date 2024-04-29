@@ -1,8 +1,9 @@
 import * as React from "react"
 import Layout from '../components/layout';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import { Seo } from '../components/seo';
-import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+
+import PostCard from '../components/postCard'
 
 const AllPostPage = ({ data }) => {
   return (
@@ -10,29 +11,7 @@ const AllPostPage = ({ data }) => {
       <h1>投稿一覧</h1>
       <p>今までの投稿一覧（日付順）</p>
       {data.allMarkdownRemark.edges.map((edge) => (
-        <div className="card mb-1">
-          <div class="row g-0">
-            <div class="col-md-4 align-self-center">
-            <GatsbyImage image={getImage(edge.node.frontmatter.hero_image)} style={{maxHeight: "200px"}} class="img-fluid rounded-start"/>
-            </div>
-            <div class="col-md-8 d-flex flex-column">
-              <div className="card-body">
-                <div key={edge.node.id}>
-                  <h2 className="card-title" style={{paddingLeft: "0.3em"}}>
-                    <Link to={`/posts/${edge.node.frontmatter.slug}`} class="stretched-link">
-                      {edge.node.frontmatter.title}
-                    </Link>
-                  </h2>
-                  <p className="card-text">{edge.node.frontmatter.summary}</p>
-                  {/* <div dangerouslySetInnerHTML={{ __html: edge.node.html }} /> */}
-                </div>
-              </div>
-              <div class="card-footer">
-                更新日：{edge.node.frontmatter.date}
-              </div>
-            </div>
-          </div>
-        </div>
+        <PostCard post={edge.node}/>
       ))}
     </Layout>
   );
