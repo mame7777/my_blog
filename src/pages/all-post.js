@@ -11,7 +11,7 @@ const AllPostPage = ({ data }) => {
       <h1>投稿一覧</h1>
       <p>今までの投稿一覧（日付順）</p>
       {data.allMarkdownRemark.edges.map((edge) => (
-        <PostCard post={edge.node}/>
+        <PostCard post={edge.node} key={edge.node.id}/>
       ))}
     </Layout>
   );
@@ -33,7 +33,6 @@ query {
           summary
           date
           slug
-          description
           hero_image {
             childImageSharp {
               gatsbyImageData

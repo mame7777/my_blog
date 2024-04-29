@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
 
       <h2 className="mt-5">新規投稿</h2>
       {data.allMarkdownRemark.edges.map((edge) => (
-        <PostCard post={edge.node}/>
+        <PostCard post={edge.node} key={edge.node.id}/>
       ))}
       <div className="text-center">
         <Link to="/all-post" className="btn btn-primary">もっと見る</Link>
@@ -40,7 +40,6 @@ query {
           summary
           date
           slug
-          description
           hero_image {
             childImageSharp {
               gatsbyImageData
