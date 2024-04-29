@@ -3,34 +3,22 @@ import Layout from '../components/layout';
 import { graphql, Link } from 'gatsby';
 import { Seo } from '../components/seo';
 
+import PostCard from '../components/postCard'
+
 const IndexPage = ({ data }) => {
   return (
     <Layout>
       <h1>mame77のブログへようこそ!</h1>
-      <p>旧ブログシステムが故障したため，新規構築中です！</p>
 
       <h2 className="mt-5">新規投稿</h2>
       {data.allMarkdownRemark.edges.map((edge) => (
-        <div className="card mb-1">
-          <div className="card-body">
-            <div key={edge.node.id}>
-              <h2 className="card-title">
-                <Link to={`/posts/${edge.node.frontmatter.slug}`} class="stretched-link">
-                  {edge.node.frontmatter.title}
-                </Link>
-              </h2>
-              <p className="card-text">{edge.node.frontmatter.summary}</p>
-              {/* <div dangerouslySetInnerHTML={{ __html: edge.node.html }} /> */}
-            </div>
-          </div>
-          <div class="card-footer">
-            更新日：{edge.node.frontmatter.date}
-          </div>
-        </div>
+        <PostCard post={edge.node}/>
       ))}
       <div className="text-center">
         <Link to="/all-post" className="btn btn-primary">もっと見る</Link>
       </div>
+      <h2>お知らせ</h2>
+      <p>旧ブログシステムが故障したため，新規構築中です！</p>
     </Layout>
   );
 }
@@ -53,6 +41,11 @@ query {
           date
           slug
           description
+          hero_image {
+            childImageSharp {
+              gatsbyImageData
+            }
+          }
         }
       }
     }
