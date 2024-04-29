@@ -20,18 +20,18 @@
 }
 
 .blog-post p {
-  margin-top: 0.3rem;
+  margin-top: 0.2rem;
   margin-left: 0.9rem;
 }
 
-.blog-post ul {
-  padding-top: 0.5rem;
-  padding-left: 0.9rem;
+.blog-post ul{
+  margin-left: 0.5rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.6rem;
 }
 
-.blog-post ol {
-  padding-top: 0.5rem;
-  padding-left: 0.9rem;
+.blog-post li{
+  margin-left: 0rem;
 }
 
 .blog-post table {
