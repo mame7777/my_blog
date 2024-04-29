@@ -17,6 +17,7 @@ module.exports = {
     user: { name: 'mame77' },
     lang: 'ja',
     logoImage: 'https://mame77.com/images/mame77-logo.png',
+    ogpImage: 'https://mame77.com/images/mame77-logo-ogp.png',
   },
   /* Your site config here */
   plugins: [
