@@ -6,7 +6,7 @@ export const Seo = ({ title, description, lang, children }) => {
     useSiteMetadata();
 
   const seo = {
-    title: title || defaultTitle,
+    title: title ? `${title} | ${defaultTitle}` : defaultTitle,
     description: description || defaultDescription,
     lang: lang || defaultLang,
   };
