@@ -16,6 +16,7 @@ module.exports = {
     category: ['blog', 'server', 'network', 'photo'],
     user: { name: 'mame77' },
     lang: 'ja',
+    logoImage: 'https://mame77.com/images/mame77-logo.png',
   },
   /* Your site config here */
   plugins: [
