@@ -8,17 +8,63 @@
   
 .blog-post h3 {
   padding: 0.5rem 0rem;
-  margin-left: 0rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.7rem;
   border-bottom: 3px solid #000;
 }
 
-/* Table */
-.blog-post table thead tr th {
-  border-bottom: 1px solid var(--bs-gray-dark);
+.blog-post h4 {
+  padding: 0.3rem 0rem;
+  margin-left: 0.7rem;
+  text-decoration: underline;
 }
 
-.blog-post table tbody tr td {
-  border-bottom: 1px solid var(--bs-gray-500);
+.blog-post p {
+  margin-top: 0.3rem;
+  margin-left: 0.9rem;
+}
+
+.blog-post ul {
+  padding-top: 0.5rem;
+  padding-left: 0.9rem;
+}
+
+.blog-post ol {
+  padding-top: 0.5rem;
+  padding-left: 0.9rem;
+}
+
+.blog-post table {
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+
+}
+
+.blog-post table th {
+  padding: 0.5rem 1rem;
+  background: var(--bs-gray);
+  color: #fff;
+  text-align: center;
+  border-bottom: solid 2px;
+}
+
+.blog-post table td {
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.blog-post table tbody tr:nth-child(even) {
+  background: var(--bs-light);
+}
+
+.blog-post table th + th {
+  border-left: solid 1px gray;
+}
+
+.blog-post table td + td {
+  border-left: solid 1px gray;
 }
 
 .gatsby-code-title {
