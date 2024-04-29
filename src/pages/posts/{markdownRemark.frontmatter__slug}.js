@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby';
 import * as React from 'react';
 import Layout from '../../components/layout';
-import { getImage, GatsbyImage } from 'gatsby-plugin-image';
+import { getImage, GatsbyImage, getSrc } from 'gatsby-plugin-image';
 import { Seo } from '../../components/seo';
 
 import "../../templates/blog-post.modules.css";
@@ -45,6 +45,6 @@ export const Head = ({ data: { markdownRemark } }) => {
   return <Seo
             title={frontmatter.title}
             description={frontmatter.description}
-            ogpImage={frontmatter.hero_image.childImageSharp.gatsbyImageData.images.fallback.src}
+            ogpImage={getSrc(frontmatter.hero_image)}
           />;
 };
