@@ -7,15 +7,15 @@ import "../templates/about-page.modules.css";
 const AboutPage = () => {
   return (
     <Layout>
-      <h1 className='h1 mb-3'>About</h1>
+      <h1 className='mb-3'>About</h1>
       <div className="container">
-        <h2 className='h2 mt-2'>about blog</h2>
+        <h2 className='mt-2'>about blog</h2>
         <p>
           そこらへんの学生がのんびり書いていくブログです．<br />
           内容の正確性には十分配慮していますが，なにか間違い等あれば，Twitter(X)のDMまでご連絡ください．
         </p>
         <a className='btn btn-primary mb-4' href="https://twitter.com/messages/compose?recipient_id=1617776838893502464">DMの送信はこちら</a>
-        <h2 className='h2 mt-2'>about me</h2>
+        <h2 className='mt-2'>about me</h2>
         <h3>所属</h3>
         <div className='under-h3'>
           <ul>
@@ -33,7 +33,7 @@ const AboutPage = () => {
         </div>
 
         <h3>スキル</h3>
-        <div className='under-h3'>
+        <div>
           <h4>バックエンド</h4>
           <div className="row justify-content-start mb-2">
             <div className='col-md-auto'>

@@ -11,7 +11,7 @@ const PostCard = ({ post }) => (
       <div className="col-md-8 d-flex flex-column">
         <div className="card-body">
           <div key={post.id}>
-            <h2 className="card-title" style={{ paddingLeft: "0.3em" }}>
+            <h2 className="card-title" style={{ paddingLeft: "0.3em", backgroundColor: "var(--bs-light)"}}>
               <Link to={`/posts/${post.frontmatter.slug}`} className="stretched-link">
                 {post.frontmatter.title}
               </Link>
