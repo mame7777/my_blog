@@ -81,5 +81,13 @@ module.exports = {
         }
       },
     },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: 'https://mame77.com',
+        sitemap: 'https://mame77.com/sitemap-index.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
   ],
 };
