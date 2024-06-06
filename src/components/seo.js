@@ -8,7 +8,6 @@ export const Seo = ({ title, description, ogpImage, lang, children }) => {
   const seo = {
     title: title ? `${title} | ${defaultTitle}` : defaultTitle,
     description: description || defaultDescription,
-    ogpImage: ogpImage || defaultOgpImage,
     lang: lang || defaultLang,
     ogpImage: ogpImage ? (defaultSiteUrl+ogpImage) : defaultOgpImage,
   };
