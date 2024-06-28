@@ -7,8 +7,6 @@ slug: '0008-grafana-with-zabbix'
 hero_image: '../../images/0008/grafana-logo.png'
 ---
 
-昔のブログの記事を発掘したので，再アップロード．
-
 ## やること
 zabbixで入手したデータを，Grafanaを使ってみやすくする．
 
