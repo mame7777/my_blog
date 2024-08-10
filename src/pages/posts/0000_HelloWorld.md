@@ -4,7 +4,7 @@ summary: '初めての投稿'
 description: '本ブログ初めての投稿です！気ままに更新していきます．'
 date: '2023-08-15'
 slug: '0000-hello-world'
-hero_image: '../../images/0000/mame77-logo.png'
+hero_image: '../../images/posts/0000/mame77-logo.png'
 ---
 
 ## やぁ！  
@@ -13,7 +13,7 @@ hero_image: '../../images/0000/mame77-logo.png'
   
 画像も表示できるよ！下はかわいいお星さまの画像！  
 <div style="width: 75%; margin-left: auto; margin-right: auto">
-    <img src="../../images/0000/test_image_star.png" width="50%"/>
+    <img src="../../images/posts/0000/test_image_star.png" width="50%"/>
     <span style="font-size:75%; color:gray;">堂々書いたけど，透過なものだと上手に表示できない...？</span>
 </div>
   

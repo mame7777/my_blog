@@ -4,7 +4,7 @@ summary: '大学院試験を外部受験したので，体験記的なそれ'
 description: '名古屋大学大学院 情報学研究科 情報システム学専攻に外部から受験した体験記です．'
 date: '2024-08-10'
 slug: '0011-graduate-school-entrance-examination-note'
-hero_image: '../../images/0011/textbook.jpg'
+hero_image: '../../images/posts/0011/textbook.jpg'
 ---
 
 ## はじめに

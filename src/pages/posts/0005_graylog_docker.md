@@ -4,7 +4,7 @@ summary: 'glaylog環境構築リベンジ'
 description: 'glaylog環境構築リベンジをDocker上で行い，正常に起動できました．'
 date: '2024-04-21'
 slug: '0005-graylog-docker'
-hero_image: '../../images/0005/graylog-logo.png'
+hero_image: '../../images/posts/0005/graylog-logo.png'
 ---
 
 ## 前回を受けて

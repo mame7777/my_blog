@@ -4,7 +4,7 @@ summary: '言語：python'
 description: 'Pythonを使いながらCO2センサの値をzabbixに送っていい感じにするコードを書きました．'
 date: '2023-10-31'
 slug: '0003-co2sensor-to-zabbix'
-hero_image: '../../images/0003/sensor.jpg'
+hero_image: '../../images/posts/0003/sensor.jpg'
 ---
 
 ## 使ったセンサ

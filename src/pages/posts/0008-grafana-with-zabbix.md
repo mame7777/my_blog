@@ -4,7 +4,7 @@ summary: 'かっこよく可視化していく'
 description: 'zabbixで取得したデータをGrafanaで可視化していくために，環境構築を行います．'
 date: '2024-04-29'
 slug: '0008-grafana-with-zabbix'
-hero_image: '../../images/0008/grafana-logo.png'
+hero_image: '../../images/posts/0008/grafana-logo.png'
 ---
 
 ## やること

@@ -4,7 +4,7 @@ summary: 'templateファイルがあったので，それを読んでちょこ�
 description: 'ZabbixでnVidia製GPUの状態を読みたいなと思ったので，やってみた，意外と簡単にできましたとさ．'
 date: '2024-04-28'
 slug: '0007-zabbix-nvidia-gpu'
-hero_image: '../../images/0007/Zabbix-logo.png'
+hero_image: '../../images/posts/0007/Zabbix-logo.png'
 ---
 
 ## はじめに

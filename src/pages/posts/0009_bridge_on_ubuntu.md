@@ -4,7 +4,7 @@ summary: 'マシンを疑似L2スイッチとして運用してみた'
 description: 'Ubuntuマシンにブリッジのconfigを入れて，L2な10Gスイッチ(仮)として運用してみました．スピードテストも実施．'
 date: '2024-04-30'
 slug: '0009-bridge-on-ubuntu'
-hero_image: '../../images/0009/bridge.jpg'
+hero_image: '../../images/posts/0009/bridge.jpg'
 ---
 
 昔のブログの記事を発掘したので，再アップロード．

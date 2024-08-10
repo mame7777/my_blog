@@ -4,7 +4,7 @@ summary: 'PATLITE社のHNL-FV2シリーズを使ってみた'
 description: 'ネットワーク制御信号灯であるPATLITE社のHNL-FV2シリーズを自宅に導入してみた．また．zabbixなどから制御できるようにするために，コマンド周りを触ってみた．'
 date: '2024-05-13'
 slug: '0010-patlite-nhl-fv2'
-hero_image: '../../images/0010/patlite-image.jpg'
+hero_image: '../../images/posts/0010/patlite-image.jpg'
 ---
 
 ## NHL-FV2とは

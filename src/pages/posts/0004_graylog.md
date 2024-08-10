@@ -4,7 +4,7 @@ summary: 'syslogをよしなにできる環境を'
 description: 'syslogをよしなにできる環境を整えるべく，graylogを入れてみることにしました．結果として，エラーで詰みました．'
 date: '2024-04-20'
 slug: '0004-graylog'
-hero_image: '../../images/0004/graylog-logo.png'
+hero_image: '../../images/posts/0004/graylog-logo.png'
 ---
 
 ## graylogって？
