@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
   return (
     <Layout>
       <h1 className='mb-3'>プライバシーポリシー・免責事項ほか</h1>
-      <small>公開日：2024年6月6日<br />最終更新日：2024年6月6日</small>
+      <small>公開日：2024年6月6日<br />最終更新日：2024年8月20日</small>
       <div className="post-body blog-post">
         <h2>プライバシーポリシー</h2>
         <h3>個人情報の利用目的</h3>
