@@ -12,9 +12,12 @@ const AboutPage = () => {
         <h2 className='mt-2'>about blog</h2>
         <p>
           そこらへんの学生がのんびり書いていくブログです．<br />
-          内容の正確性には十分配慮していますが，なにか間違い等あれば，Twitter(X)のDMまでご連絡ください．
+          内容の正確性には十分配慮していますが，なにか間違い等あれば，以下のメールアドレスまでご連絡ください．<br/>
+          また，記事に対するコメントや質問等もお待ちしております．<br/>
+          
+          メールアドレス：<img src="/images/about/mail.png" height="14px" alt="string"/>
         </p>
-        <a className='btn btn-primary mb-4' href="https://twitter.com/messages/compose?recipient_id=1617776838893502464">DMの送信はこちら</a>
+        {/* <a className='btn btn-primary mb-4' href="https://twitter.com/messages/compose?recipient_id=1617776838893502464">DMの送信はこちら</a> */}
         <h2 className='mt-2'>about me</h2>
         <h3>所属</h3>
         <div className='under-h3'>

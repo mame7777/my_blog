@@ -46,7 +46,8 @@ const PrivacyPolicy = () => {
 
         <h2>お問い合わせ</h2>
         <p>
-          当サイトのプライバシーポリシーに関するお問い合わせは，X(旧 Twitter)@mame_77_までお願いいたします．
+          当サイトのプライバシーポリシーに関するお問い合わせは，以下のメールアドレスまでお願いいたします．<br/>
+          メールアドレス：<img src="/images/about/mail.png" height="14px" alt="string"/>
         </p>
       </div>
     </Layout>
