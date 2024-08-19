@@ -48,7 +48,14 @@ module.exports = {
           },
           `gatsby-plugin-catch-links`,
           `gatsby-remark-prismjs-title`,
-          `gatsby-remark-prismjs`,          
+          `gatsby-remark-prismjs`,       
+          {
+            resolve: 'gatsby-remark-external-links',
+            options: {
+              target: '_blank',
+              rel: 'noopener',
+            },
+          },   
         ],
       },
     },
