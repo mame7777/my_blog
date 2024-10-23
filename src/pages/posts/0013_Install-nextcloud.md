@@ -161,6 +161,28 @@ sudo nano /var/www/nextcloud/config/config.php
 
 お疲れ様でした．これで，外部からもアクセスできるようになりました．
 
+### 8. アクセスリンクをいい感じにする
+「sample.com/nextcloud」ではなく，「sample.com」でアクセスしたい場合．
+`/etc/apache2/sites-enabled/default-ssl.conf`と`sudo vim /etc/apache2/sites-enabled/000-default.conf`の内容を次のように書き換える
+```
+- DocumentRoot /var/www/html
++ DocumentRoot /var/www/nextcloud
+```
+
+`/var/www/nextcloud/config/config.php`を次のように書き換える
+```
+-   'overwrite.cli.url' => 'https://sample.com/nextcloud',
+-   'htaccess.RewriteBase' => '/nextcloud',
++   'overwrite.cli.url' => 'https://sample.com/',
++   'htaccess.RewriteBase' => '/',
+```
+
+その後，次のコマンドを実行．
+```bash
+sudo -u www-data php /var/www/nextcloud/occ maintenance:update:htaccess
+sudo systemctl restart apache2
+```
+
 
 ## 参考にさせていただいたサイト
 - 公式ドキュメント
