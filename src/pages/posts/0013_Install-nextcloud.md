@@ -115,7 +115,7 @@ sudo nano /var/www/nextcloud/config/config.php
 ```php
 <?php
 $CONFIG = array (
-  'instanceid' => 'oc9gnmscsial',
+  'instanceid' => 'hogehoge',
   'overwrite.cli.url' => 'https://sub-domain.sample.com/nextcloud',
   'htaccess.RewriteBase' => '/nextcloud',
 );
