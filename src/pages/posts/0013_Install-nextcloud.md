@@ -161,7 +161,8 @@ sudo nano /var/www/nextcloud/config/config.php
 
 お疲れ様でした．これで，外部からもアクセスできるようになりました．
 
-### 8. アクセスリンクをいい感じにする
+## おまけ
+### おまけ1. アクセスリンクをいい感じにする
 「sample.com/nextcloud」ではなく，「sample.com」でアクセスしたい場合．
 `/etc/apache2/sites-enabled/default-ssl.conf`と`sudo vim /etc/apache2/sites-enabled/000-default.conf`の内容を次のように書き換える
 ```
@@ -183,6 +184,22 @@ sudo -u www-data php /var/www/nextcloud/occ maintenance:update:htaccess
 sudo systemctl restart apache2
 ```
 
+### おまけ2. データベースをセキュアにする
+まず，rootユーザーでログインして，次のコマンドを実行．（既にパスワード設定済みなら必要ない）
+```bash
+sudo mysql -u root -p
+```
+Passwordの部分は自分のパスワードに置き換える．
+```sql
+use mysql;
+ALTER USER 'root'@'localhost' IDENTIFIED BY "Password";
+```
+
+次に，セキュリティー改善のコマンドを実行．
+```bash
+mysql_secure_installation
+```
+いい感じに答えていくと，少しはセキュアになるかな．
 
 ## 参考にさせていただいたサイト
 - 公式ドキュメント
