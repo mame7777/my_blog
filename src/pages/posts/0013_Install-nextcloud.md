@@ -70,7 +70,7 @@ apacheの設定ファイルを編集．
 sudo nano /etc/apache2/sites-available/nextcloud.conf
 ```
 
-```nextcloud.conf
+```
 Alias /nextcloud "/var/www/nextcloud/"
 
 <Directory /var/www/nextcloud/>
@@ -150,7 +150,7 @@ nextlcoudの設定ファイルを編集．
 sudo nano /var/www/nextcloud/config/config.php
 ```
 
-```config.php
+```php
 'trusted_domains' =>
   array (
     0 => 'hogehoge',
