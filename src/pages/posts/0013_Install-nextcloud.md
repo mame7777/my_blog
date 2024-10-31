@@ -145,6 +145,9 @@ sudo dpkg -i cloudflared.deb && \
 sudo cloudflared service install .................
 ```
 
+詳しい設定は次のサイトが大変詳しかったので，こちらに譲りたいと思います．  
+[Cloudflare Tunnelで自宅のNextcloudにhttps接続する](https://text.yusukesakai.com/entry/20231022/1697901587)  
+
 nextlcoudの設定ファイルを編集．
 ```bash
 sudo nano /var/www/nextcloud/config/config.php
@@ -204,3 +207,4 @@ mysql_secure_installation
 ## 参考にさせていただいたサイト
 - 公式ドキュメント
 - [Ubuntu 22.04に Nextcloud をインストールする方法](https://memorandum.cloud/2023/01/23/1858/)
+- [Cloudflare Tunnelで自宅のNextcloudにhttps接続する](https://text.yusukesakai.com/entry/20231022/1697901587)  
