@@ -93,6 +93,32 @@ const AboutPage = () => {
 
             <div className="row justify-content-start mb-2">
               <div className='col-md-auto'>
+                <img src="/images/about/logo/azure.svg" width="100px" alt="azure-logo" />
+              </div>
+              <div className='col-md'>
+                <h5>Microsoft Azure</h5>
+                <p className=''>
+                  インターンにおいて，RAGの検証に使用しました．<br />
+                  Azure AI SearchとAzure OpenAI Serviceを使用しました．
+                </p>
+              </div>
+            </div>
+
+            <div className="row justify-content-start mb-2">
+              <div className='col-md-auto'>
+                <img src="/images/about/logo/aws.svg" width="100px" alt="aws-logo" />
+              </div>
+              <div className='col-md'>
+                <h5>Amazon Web Services</h5>
+                <p className=''>
+                  インターンにおいて，RAGの検証に使用しました．<br />
+                  主にAmazon Bedrockを使用しました．
+                </p>
+              </div>
+            </div>
+
+            <div className="row justify-content-start mb-2">
+              <div className='col-md-auto'>
                 <img src="/images/about/logo/zabbix.svg" width="100px" alt="linux-logo" />
               </div>
               <div className='col-md'>
