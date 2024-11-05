@@ -23,7 +23,7 @@ const Header = () => {
             <div className="container-fluid">
               <div className='justify-content-center'>
                 <a className="navbar-brand" href="/">
-                  <img src='/images/mame77-logo.png' height={"80px"} alt="logo of mame77's blog" className="d-inline-block align-text-top" />
+                  <img src='/images/mame77-logo.png' height={"70px"} alt="logo of mame77's blog" className="d-inline-block align-text-top" />
                 </a>
               </div>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
