@@ -12,10 +12,10 @@ const AboutPage = () => {
         <h2 className='mt-2'>about blog</h2>
         <p>
           そこらへんの学生がのんびり書いていくブログです．<br />
-          内容の正確性には十分配慮していますが，なにか間違い等あれば，以下のメールアドレスまでご連絡ください．<br/>
-          また，記事に対するコメントや質問等もお待ちしております．<br/>
-          
-          メールアドレス：<img src="/images/about/mail.png" height="14px" alt="string"/>
+          内容の正確性には十分配慮していますが，なにか間違い等あれば，以下のメールアドレスまでご連絡ください．<br />
+          また，記事に対するコメントや質問等もお待ちしております．<br />
+
+          メールアドレス：<img src="/images/about/mail.png" height="14px" alt="string" />
         </p>
         {/* <a className='btn btn-primary mb-4' href="https://twitter.com/messages/compose?recipient_id=1617776838893502464">DMの送信はこちら</a> */}
         <h2 className='mt-2'>about me</h2>
@@ -23,7 +23,16 @@ const AboutPage = () => {
         <div className='under-h3'>
           <ul>
             <li>名古屋大学 工学部</li>
-            <li><a href="https://naft.space">名古屋大学宇宙開発チームNAFT</a>　ロケット班</li>
+            <li><a href="https://naft.space" target="_blank" >名古屋大学宇宙開発チームNAFT</a>　ロケット班</li>
+            <ul>
+              <li>2022年度空力SL</li>
+              <li>2023年度PM<br />
+                詳しい内容は，実験参加報告ブログをご覧ください！<br />
+                ・　<a href="https://naft.space/2023/09/15/nse19th-naft/" target="_blank" rel="noopener noreferrer">「Masterpiece-14 Luminous」の打上げ実験 </a><br />
+                ・　<a href="https://naft.space/2024/04/30/ise24th-naft/" target="_blank" rel="noopener noreferrer">「Masterpiece-15 Spinel」の打上げ実験 </a>
+              </li>
+            </ul>
+
           </ul>
         </div>
         <h3>趣味</h3>
@@ -111,8 +120,8 @@ const AboutPage = () => {
               <div className='col-md'>
                 <h5>Amazon Web Services</h5>
                 <p className=''>
-                  インターンにおいて，RAGの検証に使用しました．<br />
-                  主にAmazon Bedrockを使用しました．
+                  インターンにおいて，RAGの検証・構築に使用しています．<br />
+                  主にAmazon Bedrockを使用しています．
                 </p>
               </div>
             </div>
@@ -189,7 +198,7 @@ const AboutPage = () => {
                 素材・時間が少ない中では頑張ったと自負しています．(素材集め含め実質2,3日で作った．)<br />
                 <a href='https://youtu.be/iLtV0igIx6Q?si=YBqp690K1CGPmDpN'>こちら(YouTubeへのリンク)から</a>よかったら見てみてください．<br />
                 また，写真を趣味で撮っており，広報やサークルの自団体や他団体のSNSなどに使っていただいたものも多くあります．<br />
-                <s style={{"color": "gray"}}>お金がなく新しい機材が買えません...</s>
+                <s style={{ "color": "gray" }}>お金がなく新しい機材が買えません...</s>
               </p>
               <h5>WordPress構築・運用</h5>
               <p>
@@ -206,10 +215,55 @@ const AboutPage = () => {
 
 
             </div>
+            <h3>経歴</h3>
+            <div class="container text-left">
+              <div class="row align-items-start">
+                <div class="col-md-2 fw-medium">
+                  2021.4
+                </div>
+                <div class="col-md-10">
+                  名古屋大学工学部電気電子情報工学科　入学<br />
+                  名古屋大学宇宙開発チームNAFTに入部
+                </div>
+              </div>
+              <div class="row align-items-start">
+                <div class="col-md-2 fw-medium">
+                  2022.10 ~
+                </div>
+                <div class="col-md-10">
+                  <a href='https://ocw.nagoya-u.jp/' target="_blank" rel="noopener noreferrer">名大の授業（NUOCW）</a>の開発に参加．主にフロントエンドを担当しつつ，CMS等の整備も担当．
+                </div>
+                <div class="row align-items-start">
+                  <div class="col-md-2 fw-medium">
+                    2023.4 ~ 2024.3
+                  </div>
+                  <div class="col-md-10">
+                    名古屋大学宇宙開発チームNAFTにおいて，ロケット班のPMを担当．
+                  </div>
+                </div>
+                <div class="row align-items-start">
+                  <div class="col-md-2 fw-medium">
+                    2023.9
+                  </div>
+                  <div class="col-md-10">
+                    GMOインターネットグループ株式会社のインフラコースのインターンに参加．<br/>
+                    ConoHaのインフラに関わる技術について学ぶ．
+                  </div>
+                </div>
+                <div class="row align-items-start">
+                  <div class="col-md-2 fw-medium">
+                    2024.9 ~
+                  </div>
+                  <div class="col-md-10">
+                    AIスタートアップにインターンとして参加．RAGを用いたサービスに関わる．
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </Layout >
+    </Layout>
   );
 };
 
