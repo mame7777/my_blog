@@ -23,7 +23,7 @@ const AboutPage = () => {
         <div className='under-h3'>
           <ul>
             <li>名古屋大学 工学部</li>
-            <li><a href="https://naft.space" target="_blank" >名古屋大学宇宙開発チームNAFT</a>　ロケット班</li>
+            <li><a href="https://naft.space" target="_blank" rel="noopener noreferrer">名古屋大学宇宙開発チームNAFT</a>　ロケット班</li>
             <ul>
               <li>2022年度空力SL</li>
               <li>2023年度PM<br />
@@ -175,15 +175,15 @@ const AboutPage = () => {
               <div>
                 <ul>
                   <li>C：講義で扱った程度です．自由課題で，X Window Systemを用いて，疑似的な3Dの描画を行い，お散歩ゲームを作りました．</li>
-                  <li>Arduino言語：サークルや趣味で少々触ったぐらいです．4桁7セグメントLEDや温度湿度計で遊びました．</li>
-                  <li>JavaScript：Reactを触ってるときにひぃひぃ言ってます(できない)．</li>
+                  <li>Arduino言語：サークルや趣味で少々触ったぐらいです．4桁7セグメントLEDや温度湿度計で遊びました．他には，環境センサで家の状態を読みzabbixに投げるために触りました．</li>
+                  <li>JavaScript：Reactを触ってるときにひぃひぃ言ってます(できない)．他には，Google Apps Scriptを少し触っているぐらいです．</li>
                   <li>PHP：Slackログbotでクライアントがデータを取得する際のAPIを作りました．セキュリティはちんぷんかんぷんです．</li>
                 </ul>
               </div>
               <h5>自宅サーバー群</h5>
               <p>
                 外部向けにはwebサーバーが立っているぐらいです．<br />
-                クラスタを構築したり，LAN内10G環境を整えたりして遊んでます．<br />
+                クラスタを構築したり，LAN内10G環境を整えたり，おうちストレージクラウドを立てたりして遊んでます．<br />
                 ルーターやスイッチ，多くのPCが眠っているので，有効活用していきた所存です．<br />
                 パソコンオタクを自称しているので，ハードウェアの知識は多少あります．
               </p>
