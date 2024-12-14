@@ -107,7 +107,7 @@ const AboutPage = () => {
               <div className='col-md'>
                 <h5>Amazon Web Services</h5>
                 <p className=''>
-                  インターンにおいて，LLMを用いた差―ビアスの検証・構築に使用しています．<br />
+                  インターンにおいて，LLMを用いたサービスの検証・構築に使用しています．<br />
                   boto3やpythonのcdkを使用したりしています．
                 </p>
               </div>
