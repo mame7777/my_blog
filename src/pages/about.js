@@ -100,6 +100,19 @@ const AboutPage = () => {
                 </div>
               </div></div>
 
+              <div className="row justify-content-start mb-2">
+              <div className='col-md-auto'>
+                <img src="/images/about/logo/aws.svg" width="100px" alt="aws-logo" />
+              </div>
+              <div className='col-md'>
+                <h5>Amazon Web Services</h5>
+                <p className=''>
+                  インターンにおいて，LLMを用いた差―ビアスの検証・構築に使用しています．<br />
+                  boto3やpythonのcdkを使用したりしています．
+                </p>
+              </div>
+            </div>
+
             <div className="row justify-content-start mb-2">
               <div className='col-md-auto'>
                 <img src="/images/about/logo/azure.svg" width="100px" alt="azure-logo" />
@@ -109,19 +122,6 @@ const AboutPage = () => {
                 <p className=''>
                   インターンにおいて，RAGの検証に使用しました．<br />
                   Azure AI SearchとAzure OpenAI Serviceを使用しました．
-                </p>
-              </div>
-            </div>
-
-            <div className="row justify-content-start mb-2">
-              <div className='col-md-auto'>
-                <img src="/images/about/logo/aws.svg" width="100px" alt="aws-logo" />
-              </div>
-              <div className='col-md'>
-                <h5>Amazon Web Services</h5>
-                <p className=''>
-                  インターンにおいて，RAGの検証・構築に使用しています．<br />
-                  主にAmazon Bedrockを使用しています．
                 </p>
               </div>
             </div>
@@ -184,6 +184,7 @@ const AboutPage = () => {
               <p>
                 外部向けにはwebサーバーが立っているぐらいです．<br />
                 クラスタを構築したり，LAN内10G環境を整えたり，おうちストレージクラウドを立てたりして遊んでます．<br />
+                あとは，上にあるもの以外にも，graylogやnetboxが動いています．
                 ルーターやスイッチ，多くのPCが眠っているので，有効活用していきた所存です．<br />
                 パソコンオタクを自称しているので，ハードウェアの知識は多少あります．
               </p>
@@ -255,7 +256,7 @@ const AboutPage = () => {
                     2024.9 ~
                   </div>
                   <div class="col-md-10">
-                    AIスタートアップにインターンとして参加．RAGを用いたサービスに関わる．
+                    株式会社エムニにインターンとして参加．LLMを用いたサービスの構築に関わる．
                   </div>
                 </div>
               </div>
